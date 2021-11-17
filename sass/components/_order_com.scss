@@ -1,0 +1,220 @@
+#order_complete {
+    padding-bottom: 60px;
+
+    //    thank part
+    .thank {
+        padding: 45px 0;
+        border: 2px solid #f1f1f1;
+
+        h4 {
+            @include fntfml(#333, 30px, 700, $poppins);
+
+            i {
+                font-size: 30px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    //    order part
+    .o_number {
+        padding: 50px 0;
+
+        .number {
+            padding: 0 12px;
+
+            p {
+                @include fntfml(#666, 18px, 400, $poppins);
+                margin-bottom: 10px;
+            }
+
+            h5 {
+                @include fntfml(#333, 20px, 700, $poppins);
+            }
+        }
+    }
+
+    // order details
+    .order_detail {
+        h4 {
+            @include fntfml(#333, 20px, 700, $poppins);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+
+        }
+    }
+
+    // order product
+    .product {
+        padding: 30px 30px 60px 30px;
+        border: 1px solid #eee;
+
+        .product_inner {
+            h5 {
+                @include fntfml(#333, 20px, 500, $poppins);
+                padding-bottom: 20px;
+                border-bottom: 1px solid #eee;
+            }
+        }
+
+        .product_text {
+            padding: 35px 0 30px;
+
+
+            a {
+                @include fntfml(#336699, 14px, 400, $poppins);
+                margin-bottom: 5px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+                span{
+                    color:#333;
+                    font-size: 16px;
+                }
+                i{
+                    font-size: 14px;
+                    margin:0 5px;
+                }
+            }
+
+            p {
+                @include fntfml(#666, 14px, 400, $poppins);
+                margin-bottom:40px ;
+                a{
+                    @include fntfml(#336699, 14px, 400, $poppins);
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+       
+
+        h6 {
+            @include fntfml(#333, 18px, 500, $poppins);
+            margin-bottom: 20px;
+        }
+    }
+    .product_price{
+        padding: 35px 0 30px;
+        p{
+            @include fntfml(#666, 14px, 300, $poppins);
+            margin-bottom: 60px
+        }
+        b{
+            @include fntfml(#666, 16px, 500, $poppins);
+            margin-bottom: 20px;
+        }
+    }
+    .ship{
+        padding: 20px 0;
+        border-top: 1px solid #f1f1f1;
+    .shipping{
+        h6{
+            @include fntfml(#333, 18px, 500, $poppins);
+           
+        }
+    }
+    .shipping_price{
+        h5{
+            @include fntfml(#666, 16px, 500, $poppins);
+             
+        }
+        .s_price{
+            @include fntfml(#333, 20px, 700, $poppins);
+        }
+    }
+}
+
+
+}
+.sub_Order{
+    h5{
+        @include fntfml(#333, 20px, 500, $poppins);
+        margin: 25px 0 30px;
+        text-transform: capitalize;
+    }
+    p{
+        @include fntfml(#666, 14px, 400, $poppins);
+        padding: 20px;
+        border:1px dotted #999;
+        i{
+            
+        }
+        strong{
+            @include fntfml(#666, 16px, 500, $poppins);
+            margin-left: 10px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+// order item
+.o_head{
+    padding: 30px 0;
+    border-bottom:1px solid #f1f1f1;
+    .head_order{
+        h4{
+            @include fntfml(#333, 20px, 600, $poppins);  
+            text-transform: capitalize;
+        }
+    }
+}
+
+.o_item{
+    padding:40px 0 0 ;
+    .o_date{
+        span{
+            @include fntfml(#336699, 14px, 400, $poppins);
+            margin-bottom:50px ; 
+            display: block
+        }
+        p{
+            @include fntfml(#999, 16px, 400, $poppins);
+            margin-bottom: 50px;  
+        }
+        strong{
+            @include fntfml(#666, 16px, 400, $poppins);
+            margin-bottom: 50px; 
+            display: block;
+        }
+        a{
+            padding: 0px 20px;
+            line-height: 40px;
+            background: #999;
+            display: block;
+            @include fntfml(#fff, 18px, 400, $poppins);
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+            &:hover{
+                background: #000;
+                color:#fff;
+            }
+}
+    }
+}
+// Billing address
+.biling_text{
+    padding-left: 0;
+    h4{
+        @include fntfml(#333, 18px, 400, $poppins);
+        padding-bottom: 20px;
+        border-bottom: 1px solid #f1f1f1;
+        text-transform: capitalize;
+        text-align: left;
+    }
+    ul{
+        padding-top: 30px;
+        li{
+            @include fntfml(#666, 14px, 400, $poppins);
+            margin-bottom: 15px;
+            text-transform: capitalize;
+        }
+    }
+}
+}

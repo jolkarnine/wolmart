@@ -1,0 +1,33 @@
+#contact_information{
+    .contact_main{
+        padding: 90px 0;
+        border-top: 1px solid #f1f1f1;
+        border-bottom: 1px solid #f1f1f1;
+        .contact_head{
+            h3{
+                @include fntfml(#333, 25px, 600, $poppins);
+                text-transform: capitalize;
+                margin-bottom: 20px;
+            }
+            p{
+                @include fntfml(#666, 14px, 400, $poppins);
+                margin-bottom: 50px;
+            }
+        }
+        .contact_text{
+            i{
+                color:#336699;
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+            h5{
+                @include fntfml(#333, 20px, 600, $poppins);
+                margin-bottom: 5px;
+                text-transform: capitalize;
+            }
+            p{
+                @include fntfml(#666, 14px, 400, $poppins); 
+            }
+        }
+    }
+}

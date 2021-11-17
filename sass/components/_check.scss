@@ -1,0 +1,692 @@
+.check_part {
+	.accordion_form {
+		.accordion {
+			.accordion-item {
+				margin-bottom: 25px;
+
+				&:first-of-type {
+					border: 0;
+				}
+
+				h2 {
+					border: 0;
+
+					button {
+						@include fntfml(#666, 14px, 400, $poppins);
+						text-transform: capitalize;
+						border: 0;
+						outline: 0;
+						box-shadow: 0;
+						padding: 0;
+						margin-bottom: 20px;
+
+						span {
+							a {
+								@include fntfml(#333, 14px, 500, $poppins);
+								text-transform: uppercase;
+								margin-left: 5px;
+
+								&:hover {
+									text-decoration: underline;
+								}
+							}
+						}
+
+						&:not(.collapsed) {
+							color: 0;
+							background-color: #fff;
+							box-shadow: inset 0 0px 0 rgba(0, 0, 0, .125);
+
+							&::after {
+								display: none;
+							}
+						}
+
+						&:focus {
+							z-index: 3;
+							border-color: none;
+							outline: 0;
+							box-shadow: 0 0 0 0rem rgba(13, 110, 253, .25);
+						}
+
+						&::after {
+							display: none;
+						}
+
+					}
+				}
+
+				.accordion-body {
+					padding: 0;
+
+					form {
+						border: 1px solid #eee;
+						border-top-width: 3px;
+						padding: 30px;
+						border-radius: 3px;
+						-webkit-border-radius: 3px;
+						-moz-border-radius: 3px;
+						-ms-border-radius: 3px;
+						-o-border-radius: 3px;
+
+						.text {
+							p {
+								@include fntfml(#666, 13px, 400, $poppins);
+								padding-bottom: 20px;
+							}
+						}
+
+						.email_input,
+						.password_input {
+							label {
+								@include fntfml(#666, 15px, 400, $poppins);
+								margin-bottom: 5px;
+							}
+
+							input {
+								width: 100%;
+								display: block;
+								@include fntfml(#666, 14px, 300, $poppins);
+								border: 0;
+								outline: 0;
+								box-shadow: none;
+								background: transparent;
+								padding: 10px 3%;
+								border: 1px solid #eee;
+								border-radius: 3px;
+								-webkit-border-radius: 3px;
+								-moz-border-radius: 3px;
+								-ms-border-radius: 3px;
+								-o-border-radius: 3px;
+
+								&:focus {
+									border-color: #999;
+
+								}
+							}
+						}
+
+						.check_box {
+							input {
+								border: 0;
+								outline: 0;
+								box-shadow: none;
+								width: 20px;
+								height: 20px;
+
+
+							}
+
+							label {
+								@include fntfml(#666, 15px, 400, $poppins);
+								margin-left: 10px;
+
+							}
+
+							a {
+								@include fntfml(#336699, 13px, 400, $poppins);
+								margin-left: 10px;
+
+								&:hover {
+									text-decoration: underline;
+								}
+							}
+						}
+
+						button {
+							@include fntfml(#333, 16px, 500, $poppins);
+							text-transform: uppercase;
+							padding: 0 30px;
+							line-height: 40px;
+							border: 0;
+							background: 0;
+							outline: 0;
+							background: #f1f1f1;
+							margin-top: 20px;
+							border-radius: 3px;
+							-webkit-border-radius: 3px;
+							-moz-border-radius: 3px;
+							-ms-border-radius: 3px;
+							-o-border-radius: 3px;
+
+							&:hover {
+								color: #fff;
+								background: #336699;
+							}
+						}
+
+						.form_text {
+							p {
+								@include fntfml(#666, 15px, 400, $poppins);
+								margin-bottom: 20px;
+							}
+
+							input {
+								width: 200px;
+								padding: 10px 20px 10px 10px;
+								outline: 0;
+								border: 0;
+								box-shadow: none;
+								border: 1px solid #eee;
+
+								&:focus {
+									border-color: #999;
+								}
+							}
+
+							button {
+								@include fntfml(#333, 16px, 400, $poppins);
+								text-transform: uppercase;
+								padding: 0 30px;
+								line-height: 44px;
+								margin-left: 5px;
+
+								&:hover {
+									color: #fff;
+								}
+							}
+
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.left_part {
+		h3 {
+			@include fntfml(#333, 20px, 500, $poppins);
+			text-transform: uppercase;
+			margin-top: 10px;
+		}
+
+		form {
+			.name {
+				margin-top: 20px;
+
+				.first_name {
+					width: 48%;
+					float: left;
+					margin-right: 4%;
+					margin-bottom: 20px;
+
+					input {
+						width: 100%;
+						@include fntfml(#333, 14px, 400, $poppins);
+						padding: 10px 3%;
+						border: 0;
+						outline: 0;
+						box-shadow: none;
+						border: 1px solid #ccc;
+						border-radius: 3px;
+						-webkit-border-radius: 3px;
+						-moz-border-radius: 3px;
+						-ms-border-radius: 3px;
+						-o-border-radius: 3px;
+
+						&:focus {
+							border-color: #333;
+						}
+					}
+
+					label {
+						@include fntfml(#666, 13px, 400, $poppins);
+						display: block;
+						margin-bottom: 5px;
+					}
+				}
+
+				.last_name {
+					width: 48%;
+					float: left;
+					margin-bottom: 20px;
+
+					input {
+						width: 100%;
+						@include fntfml(#333, 14px, 400, $poppins);
+						padding: 10px 3%;
+						border: 0;
+						outline: 0;
+						box-shadow: none;
+						border: 1px solid #ccc;
+						border-radius: 3px;
+						-webkit-border-radius: 3px;
+						-moz-border-radius: 3px;
+						-ms-border-radius: 3px;
+						-o-border-radius: 3px;
+
+						&:focus {
+							border-color: #333;
+						}
+					}
+
+					label {
+						@include fntfml(#666, 13px, 400, $poppins);
+						display: block;
+						margin-bottom: 5px;
+					}
+				}
+			}
+
+			.company {
+				margin-bottom: 15px;
+				margin-top: 20px;
+
+				input {
+					width: 100%;
+					padding: 10px 3%;
+					border: 0;
+					outline: 0;
+					box-shadow: none;
+					border: 1px solid #ccc;
+					border-radius: 3px;
+					-webkit-border-radius: 3px;
+					-moz-border-radius: 3px;
+					-ms-border-radius: 3px;
+					-o-border-radius: 3px;
+					margin-bottom: 20px;
+
+					&:focus {
+						border-color: #999;
+					}
+				}
+
+				label {
+					@include fntfml(#666, 13px, 400, $poppins);
+					display: block;
+					margin-bottom: 5px;
+				}
+
+				select {
+					width: 100%;
+					margin-bottom: 10px;
+					background: #fff;
+					padding: 10px 2%;
+					border: 0;
+					outline: 0;
+					box-shadow: 0;
+					@include fntfml(#666, 16px, 400, $poppins);
+					text-transform: capitalize;
+					border: 1px solid #999;
+					border-radius: 3px;
+					-webkit-border-radius: 3px;
+					-moz-border-radius: 3px;
+					-ms-border-radius: 3px;
+					-o-border-radius: 3px;
+					margin-bottom: 20px;
+
+					option {
+						background: #fff;
+						border: 1px solid #333;
+
+					}
+
+				}
+			}
+
+			.town {
+
+				.town_input,
+				.zip,
+				.phone {
+					width: 48%;
+					float: left;
+					margin-right: 4%;
+
+					label {
+						@include fntfml(#666, 13px, 400, $poppins);
+						display: block;
+						margin-bottom: 5px;
+					}
+
+					input {
+
+						width: 100%;
+						padding: 10px 3%;
+						border: 0;
+						outline: 0;
+						box-shadow: none;
+						border: 1px solid #ccc;
+						border-radius: 3px;
+						-webkit-border-radius: 3px;
+						-moz-border-radius: 3px;
+						-ms-border-radius: 3px;
+						-o-border-radius: 3px;
+						margin-bottom: 20px;
+
+						&:focus {
+							border-color: #999;
+						}
+					}
+				}
+
+				.state {
+					width: 48%;
+					float: left;
+
+					label {
+						@include fntfml(#666, 13px, 400, $poppins);
+						display: block;
+						margin-bottom: 5px;
+					}
+
+					select {
+						width: 100%;
+						padding: 10px 3%;
+						border: 0;
+						outline: 0;
+						background: #fff;
+						box-shadow: none;
+						border: 1px solid #ccc;
+						@include fntfml(#666, 14px, 400, $poppins);
+						border-radius: 3px;
+						-webkit-border-radius: 3px;
+						-moz-border-radius: 3px;
+						-ms-border-radius: 3px;
+						-o-border-radius: 3px;
+						margin-bottom: 20px;
+
+						option {
+							background: #fff;
+							border: 1px solid #333;
+						}
+					}
+				}
+
+				.phone {
+					margin-right: 0;
+				}
+
+				.email {
+					width: 100%;
+
+					input {
+						width: 100% !important;
+						padding: 10px 3%;
+						border: 0;
+						outline: 0;
+						box-shadow: none;
+						border: 1px solid #ccc;
+						border-radius: 3px;
+						-webkit-border-radius: 3px;
+						-moz-border-radius: 3px;
+						-ms-border-radius: 3px;
+						-o-border-radius: 3px;
+						margin-bottom: 20px;
+
+						&:focus {
+							border-color: #999;
+						}
+					}
+
+					label {
+						@include fntfml(#666, 13px, 400, $poppins);
+						display: block;
+						margin-bottom: 5px;
+					}
+
+				}
+			}
+		}
+
+		.check_accordion {
+			.accordion {
+				.accordion-item {
+					h2 {
+
+						button {
+							@include fntfml(#666, 14px, 400, $poppins);
+							text-transform: capitalize;
+							border: 0 !important;
+							outline: 0 !important;
+							box-shadow: 0;
+							padding: 0;
+							background: none;
+							margin: 40px 0 50px;
+
+							form {
+								input {
+									width: 20px;
+									height: 20px;
+									margin-top: 0em;
+									border-color: #000;
+
+									&:focus {
+										border-color: #666;
+										outline: 0;
+										box-shadow: 0 0 0 0rem rgba(13, 110, 253, .25);
+									}
+								}
+
+
+								label {
+									@include fntfml(#666, 14px, 400, $poppins);
+									cursor: pointer;
+									padding-left: 15px;
+									display: inline-block;
+
+								}
+							}
+
+							&:focus {
+								z-index: 3;
+								border-color: 0;
+								outline: 0;
+								box-shadow: 0 0 0 0rem rgba(13, 110, 253, .25) !important;
+							}
+
+							&:not(.collapsed) {
+								color: 0;
+								background-color: #fff;
+								box-shadow: inset 0 0px 0 rgba(0, 0, 0, .125) !important;
+							}
+
+							&::after {
+								display: none
+							}
+						}
+
+					}
+
+					.accordion-body {
+						padding: 1rem 1.25rem;
+					}
+				}
+
+			}
+		}
+	}
+
+	.textarea {
+
+		label {
+			@include fntfml(#666, 14px, 400, $poppins);
+
+			margin-left: 10px;
+			display: block;
+			margin-bottom: 5px;
+
+		}
+
+		textarea {
+			width: 100% !important;
+			padding: 10px 3%;
+			border: 0;
+			outline: 0;
+			box-shadow: none;
+			@include fntfml(#666, 16px, 400, $poppins);
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			-ms-border-radius: 3px;
+			-o-border-radius: 3px;
+			margin-bottom: 20px;
+
+		}
+	}
+
+	// right part
+	.right_part {
+		h3 {
+			@include fntfml(#222, 20px, 700, $poppins);
+		}
+
+		p.p_order {
+			@include fntfml(#222, 17px, 500, $poppins);
+			padding-bottom: 10px;
+			border-bottom: 1px solid #f1f1f1;
+		}
+
+		.cart_inner {
+
+			border-bottom: none !important;
+
+			.subtotal {
+				p {
+					@include fntfml(#666, 14px, 400, $poppins);
+					margin: 20px 0;
+
+					i {
+						color: #666;
+						font-size: 14px;
+						margin: 0 10px;
+					}
+
+					span {
+						color: #666;
+						font-size: 16px;
+					}
+				}
+
+				h6 {
+					@include fntfml(#333, 16px, 400, $poppins);
+
+				}
+			}
+		}
+
+		.total_price {
+
+			border-bottom: 1px solid #f1f1f1 !important;
+		}
+
+		.payment {
+			padding-bottom: 20px;
+			border-bottom: 1px solid #f1f1f1;
+			h4 {
+				@include fntfml(#333, 16px, 500, $poppins);
+				margin: 25px 0 20px;
+			}
+
+			.accordion {
+				.accordion-item {
+
+
+					border: 0;
+
+					h2 {
+						button {
+							padding-left: 0;
+							&:focus {
+								z-index: 3;
+								border-color: 0;
+								outline: 0;
+								box-shadow: 0 0 0 0rem rgba(13, 110, 253, .25);
+							}
+
+							&:not(.collapsed) {
+								color: #333;
+								background-color: #fff;
+								box-shadow: inset 0 0px 0 rgba(0, 0, 0, .125);
+							}
+
+							&:not(.collapsed)::after {
+								display: none;
+							}
+
+							&::after {
+								display: none;
+							}
+
+							form {
+								input{
+									
+									&:focus {
+										border-color: 0;
+										
+										box-shadow: 0 0 0 0rem rgba(13,110,253,.25); 
+									}
+									&:checked {
+										background: #000;
+
+									}
+									&:checked[type="radio"] {
+									
+										background-image: none;
+									
+									}
+
+									
+								}
+								.form-check-input[type="radio"] {
+									outline: 1px solid #ddd;
+									border: 3px solid #fff;
+								}
+
+								
+
+								
+							}
+						}
+					}
+				}
+			}
+		}
+		.btn_n{
+			margin-top: 30px;
+			a{
+				@include fntfml(#333, 20px, 600, $poppins);
+				text-transform: uppercase;
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+// .form-check-input:checked[type="radio"] {
+// 	// display: none;
+
+// 	background-image: none;
+
+// }
+
+// .form-check-input[type="radio"] {
+// 	outline: 1px solid #ddd;
+// 	border: 3px solid #fff;
+
+// 	// border-radius: 50%;
+// 	// padding: 5px;
+// 	// width: 10px;
+// 	// height: 10px;
+// 	// background: red;
+// }
+
+// .form-check-input:checked {
+
+// 	// background: #222;
+// 	// border-color: #ddd;
+// 	// padding: 5px;
+// 	// width: 10px;
+// 	// height: 10px;
+// 	// background: black;
+// }

@@ -1,0 +1,63 @@
+#wolmart_online_store {
+    padding-bottom: 100px;
+
+    .wolmart_border {
+        padding-top: 100px;
+        border-top: 1px solid #eee;
+
+        .client_text {
+            padding: 70px 70px 0 0;
+
+            span {
+                @include fntfml(#336699, 18px, 600, $poppins);
+             
+            }
+
+            h2 {
+                @include fntfml(#333, 45px, 700, $poppins);
+                text-transform: capitalize;
+                margin: 20px 0 20px 0;
+                line-height: 50px;
+            }
+
+            p {
+                @include fntfml(#333, 14px, 400, $poppins);
+                line-height: 26px;
+                margin-bottom: 30px;
+            }
+
+            a {
+                @include fntfml(#333, 16px, 500, $poppins);
+                text-transform: uppercase;
+                padding: 0 35px;
+                line-height: 50px;
+                border: 2px solid #333;
+                border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
+                transition: $trans;
+                -webkit-transition: $trans;
+                -moz-transition: $trans;
+                -ms-transition: $trans;
+                -o-transition: $trans;
+
+                &:hover {
+                    background: #222;
+                    color: #fff;
+                    border-color: #222;
+                }
+            }
+        }
+
+        .client_img{
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            overflow: hidden;
+}
+    }
+}

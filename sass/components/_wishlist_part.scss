@@ -1,0 +1,177 @@
+#wishlist {
+    padding-bottom: 50px;
+
+    .wish_text {
+        padding: 50px 0;
+        border-top: 1px solid #f1f1f1;
+
+        h4 {
+            @include fntfml(#333, 25px, 600, $poppins);
+            text-transform: capitalize;
+        }
+    }
+
+    .product {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #f1f1f1;
+
+        .wish_product {
+            p {
+                @include fntfml(#333, 17px, 500, $poppins);
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    .blue_sky {
+        padding: 20px 0;
+        border-bottom: 1px solid #f1f1f1;
+
+        .bag_img {
+            position: relative;
+
+            i {
+                position: absolute;
+                right: 8px;
+                top: -13px;
+                color: #333;
+                font-size: 14px;
+                width: 22px;
+                height: 22px;
+                line-height: 20px;
+                text-align: center;
+                background: #fff;
+                box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .40);
+                border-radius: 50px;
+                -webkit-border-radius: 50px;
+                -moz-border-radius: 50px;
+                -ms-border-radius: 50px;
+                -o-border-radius: 50px;
+            }
+
+            img {
+                width: 100px;
+                height: 110px;
+            }
+        }
+
+
+        .bag_text {
+            a {
+                margin-top: 50px;
+                @include fntfml(#666, 15px, 400, $poppins);
+                text-transform: capitalize;
+
+                &:hover {
+                    color: #336699;
+                }
+
+            }
+        }
+
+        .wish_product {
+            padding-top: 50px;
+
+            span {
+                @include fntfml(#333, 16px, 500, $poppins);
+                text-transform: capitalize;
+
+            }
+
+            .stock {
+                @include fntfml(#336699, 16px, 400, $poppins);
+            }
+        }
+
+        .wish_button {
+            margin-top: 50px;
+            a {
+                @include fntfml(#333, 16px, 500, $poppins) ;
+                text-transform: capitalize;
+                padding: 0 25px;
+                line-height: 35px;
+                border: 1px solid #999;
+                margin: 0 3px;
+                border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
+                &:hover{
+                   background: #e1e1e1;
+                   border-color:#e1e1e1;
+                }
+            }
+
+            .button-2 {
+                @include fntfml(#fff,16px,500,$poppins);
+                text-transform: uppercase;
+                background:#222;
+                border:1px solid #222;
+                border-radius: 4px;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                -ms-border-radius: 4px;
+                -o-border-radius: 4px;
+                &:hover{
+                    background: #454545;
+                }
+            }
+        }
+    }
+    .wish_icon{
+        margin-top: 30px;
+        span{
+            @include fntfml(#333,20px,700,$poppins);
+            text-transform: uppercase;
+        }
+        .icon{
+            display: inline-block;
+            margin-left: 20px;
+            a {
+                i {
+                    width: 35px;
+                    height: 35px;
+                    line-height: 35px;
+                    text-align: center;
+                    color: #333;
+                    background: transparent;
+                    border:1px solid #999;
+                    margin: 0 3px;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    &:hover{
+                        background:#1b4f90 ;
+                        border-color:#1b4f90 ;
+                        color:#fff;
+                    }
+                }
+                .fa-twitter{
+                    &:hover{
+                    background: #00adef;
+                    border-color: #00adef;
+                    color:#fff;
+                    }
+                }
+                .fa-instagram{
+                    &:hover{
+                    background: #cc0001;
+                    border-color: #cc0001;
+                    color:#fff;
+                    }
+                }
+                .fa-pinterest{
+                    &:hover{
+                    background: #2c567e;
+                    border-color:#2c567e ;
+                    color:#fff;
+                    }
+                }
+            }
+        }
+    }
+
+    }

@@ -1,0 +1,39 @@
+#support {
+    padding: 35px 0 60px;
+
+    .support_border {
+        border: 1px solid #f1f1f1;
+        border-radius: 5px;
+        padding: 30px 50px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+
+        .support_text {
+            padding-left: 100px;
+            position: relative;
+          
+
+            i {
+                position: absolute;
+                left: 40px;
+                top: 50%;
+                color:#336699;
+                font-size: 35px;
+                transform: translatey(-50%);
+                -webkit-transform: translatey(-50%);
+                -moz-transform: translatey(-50%);
+                -ms-transform: translatey(-50%);
+                -o-transform: translatey(-50%);
+            }
+            h5{
+                @include fntfml(#464646, 17px, 500, $poppins);
+                text-transform: capitalize;
+            }
+            p{
+                @include fntfml(#666, 15px, 400, $poppins);
+            }
+        }
+    }
+}

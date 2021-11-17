@@ -1,0 +1,311 @@
+// blog text left..............
+#blog_main {
+    padding-bottom: 20px;
+
+    .blog_border {
+        padding-top: 30px;
+        border-top: 1px solid #eee;
+
+        .b_main {
+            .blog_inner {
+                margin-bottom: 40px;
+
+                .blog_img {
+                    border-radius: 7px;
+                    -webkit-border-radius: 7px;
+                    -moz-border-radius: 7px;
+                    -ms-border-radius: 7px;
+                    -o-border-radius: 7px;
+                    overflow: hidden;
+                    margin-bottom: 20px;
+
+                    img {
+
+                        &:hover {
+                            transform: scale(1.1);
+                            -webkit-transform: scale(1.1);
+                            -moz-transform: scale(1.1);
+                            -ms-transform: scale(1.1);
+                            -o-transform: scale(1.1);
+                        }
+                    }
+                }
+
+                .blog_text {
+                    a {
+                        @include fntfml(#336699, 13px, 300, $poppins);
+                        text-transform: capitalize;
+
+                    }
+
+                    h4 {
+                        a {
+                            @include fntfml(#222, 20px, 500, $poppins);
+                            text-transform: capitalize;
+
+                            &:hover {
+                                color: #336699;
+                            }
+                        }
+
+                    }
+
+                    p {
+                        @include fntfml(#666, 14px, 400, $poppins);
+                        margin: 20px 0 25px;
+                        line-height: 30px;
+
+                        a {
+                            @include fntfml(#336699, 14px, 400, $poppins);
+                            text-transform: lowercase;
+                        }
+                    }
+
+                    h6 {
+                        @include fntfml(#666, 20px, 500, $poppins);
+
+                        a {
+                            @include fntfml(#333, 20px, 600, $poppins);
+                        }
+
+                        .date {
+                            @include fntfml(#333, 16px, 400, $poppins);
+                        }
+                    }
+                }
+            }
+        }
+
+        // blog text right...................
+        .blog_widget {
+            .search {
+                margin-bottom: 40px;
+
+                form {
+                    position: relative;
+
+                    input {
+                        border: 0;
+                        background: none;
+                        outline: 0;
+                        padding: 15px 20px;
+                        @include fntfml(#666, 15px, 400, $poppins);
+                        border: 1px solid #eee;
+                        border-radius: 5px;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        -ms-border-radius: 5px;
+                        -o-border-radius: 5px;
+                    }
+
+                    button {
+                        position: absolute;
+                        right: 0px;
+                        top: 50%;
+                        border: 0;
+                        background: none;
+                        outline: 0;
+                        font-size: 20px;
+                        color: #666;
+                        transform: translatey(-50%);
+                        -webkit-transform: translatey(-50%);
+                        -moz-transform: translatey(-50%);
+                        -ms-transform: translatey(-50%);
+                        -o-transform: translatey(-50%);
+                    }
+                }
+            }
+
+            .Blog_categories {
+                margin-bottom: 30px;
+
+                h4 {
+                    @include fntfml(#333, 16px, 500, $poppins);
+                    text-transform: capitalize;
+                    margin-bottom: 15px;
+                }
+
+                ul {
+                    li {
+                        a {
+                            @include fntfml(#666, 14px, 400, $poppins);
+                            text-transform: capitalize;
+                            margin-bottom: 15px;
+
+                            &:hover {
+                                color: #336699;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .popular_post {
+                margin-bottom: 30px;
+
+                h4 {
+                    @include fntfml(#333, 16px, 500, $poppins);
+                    text-transform: capitalize;
+                    margin-bottom: 30px;
+                }
+
+                .popular_slider {
+                    .popular_itme {
+
+                        .popular_img {
+                            border-radius: 5px;
+                            -webkit-border-radius: 5px;
+                            -moz-border-radius: 5px;
+                            -ms-border-radius: 5px;
+                            -o-border-radius: 5px;
+                            overflow: hidden;
+                        }
+
+                        .popular_text {
+                            margin-top: 15px;
+
+                            p {
+                                a {
+                                    @include fntfml(#333, 15px, 400, $poppins);
+                                    text-transform: capitalize;
+                                    margin-bottom: 10px
+                                }
+                            }
+
+                            .small {
+                                a {
+                                    @include fntfml(#666, 14px, 400, $poppins);
+                                    text-transform: capitalize;
+
+                                }
+                            }
+                        }
+                    }
+
+                    .net-arrow,
+                    .pre-arrow {
+                        position: absolute;
+                        font-size: 14px;
+                        color: #999;
+                        z-index: 999;
+                    }
+
+                    .net-arrow {
+                        right: 10px;
+                        top: -40px;
+                    }
+
+                    .pre-arrow {
+                        top: -40px;
+                        left: 88%;
+                    }
+                }
+            }
+
+            .custom_blog {
+                margin-bottom: 30px;
+
+                h4 {
+                    @include fntfml(#333, 16px, 500, $poppins);
+                    text-transform: capitalize;
+                    margin-bottom: 20px;
+
+                }
+
+                p {
+                    @include fntfml(#666, 14px, 400, $poppins);
+                    line-height: 24px;
+                }
+            }
+
+            .browse_tag {
+                margin-bottom: 30px;
+
+                h4 {
+                    @include fntfml(#333, 16px, 500, $poppins);
+                    text-transform: capitalize;
+                    margin-bottom: 20px;
+
+                }
+            }
+
+            .widget-body {
+                margin-bottom: 30px;
+
+                a {
+                    padding: 5px 12px;
+                    @include fntfml(#333, 13px, 400, $poppins);
+                    border: 1px solid #999;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                    margin-right: 12px;
+                    margin-bottom: 12px;
+
+                    &:hover {
+                        color: #336699;
+                        border: 1px solid #336699;
+                    }
+                }
+            }
+
+            .calender {
+                h4 {
+                    @include fntfml(#333, 16px, 500, $poppins);
+                    text-transform: capitalize;
+                    margin-bottom: 25px;
+                }
+
+                span {
+                    @include fntfml(#fff, 20px, 500, $poppins);
+                    display: block;
+                    text-transform: capitalize;
+                    padding: 20px;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                    background: #336699;
+                    text-align: center;
+                    margin-bottom: 15px;
+                }
+
+                table {
+                    thead{
+                        tr{
+                            td{
+                                padding: 0 11px 0 14px;
+                                padding-bottom: 18px;
+                                @include fntfml(#333, 16px, 500, $poppins);
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+
+                    tbody {
+
+                        tr {
+                            width: 100%;
+                            text-align: center;
+
+                            td {
+                                padding: 0 11px 0 14px;
+                                padding-bottom: 20px;
+                                @include fntfml(#333, 14px, 400, $poppins);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .fix_wid{
+            position: sticky;
+            left: 0;
+            top: -600px;
+            width: 100%;
+        }
+    }
+}

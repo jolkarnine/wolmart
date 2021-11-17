@@ -1,0 +1,445 @@
+#cart_part {
+    padding-bottom: 70px;
+
+    .product {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #f1f1f1;
+
+        .wish_product {
+            p {
+                @include fntfml(#333, 17px, 500, $poppins);
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    .blue_sky {
+        padding: 20px 0;
+        border-bottom: 1px solid #f1f1f1;
+
+        .bag_img {
+            position: relative;
+
+            i {
+                position: absolute;
+                right: 8px;
+                top: -13px;
+                color: #333;
+                font-size: 14px;
+                width: 22px;
+                height: 22px;
+                line-height: 20px;
+                text-align: center;
+                background: #fff;
+                box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .40);
+                border-radius: 50px;
+                -webkit-border-radius: 50px;
+                -moz-border-radius: 50px;
+                -ms-border-radius: 50px;
+                -o-border-radius: 50px;
+            }
+
+            img {
+                width: 100px;
+                height: 110px;
+            }
+        }
+
+
+        .bag_text {
+            a {
+                margin-top: 50px;
+                @include fntfml(#666, 15px, 400, $poppins);
+                text-transform: capitalize;
+
+                &:hover {
+                    color: #336699;
+                }
+
+            }
+        }
+
+        .wish_product {
+            padding-top: 50px;
+
+            span {
+                @include fntfml(#333, 16px, 500, $poppins);
+                text-transform: capitalize;
+
+            }
+        }
+
+        .handle-counter {
+            position: relative;
+            display: inline-block;
+            margin-top: 35px;
+
+            input {
+                width: 150px;
+                padding: 7px 10px;
+                box-shadow: none;
+                border: 0;
+                border: 1px solid #e0e0e0;
+                color: #666;
+                font-size: 18px;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+            }
+
+            .increment_button {
+                position: absolute;
+                border: 0;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+
+                button {
+                    padding: 0;
+                    box-shadow: none;
+                    border: 0;
+                    width: 23px;
+                    height: 23px;
+                    margin: 0 3px;
+                    line-height: 23px;
+                    text-align: center;
+                    font-size: 18px;
+                    color: #333;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                }
+            }
+        }
+
+        .wish_button {
+            margin-top: 50px;
+
+            a {
+                @include fntfml(#333, 16px, 500, $poppins);
+                text-transform: capitalize;
+                padding: 0 25px;
+                line-height: 35px;
+                border: 1px solid #999;
+                margin: 0 3px;
+                border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
+
+                &:hover {
+                    background: #e1e1e1;
+                    border-color: #e1e1e1;
+                }
+            }
+
+            .button-2 {
+                @include fntfml(#fff, 16px, 500, $poppins);
+                text-transform: uppercase;
+                background: #222;
+                border: 1px solid #222;
+                border-radius: 4px;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                -ms-border-radius: 4px;
+                -o-border-radius: 4px;
+
+                &:hover {
+                    background: #454545;
+                }
+            }
+        }
+    }
+
+    .main_button {
+        padding: 20px 0 50px 0;
+
+        .button_shop {
+            a {
+                @include fntfml(#fff, 17px, 500, $poppins);
+                text-transform: uppercase;
+                padding: 0 25px 0 30px;
+                line-height: 45px;
+                border: 1px solid #222;
+                background: #222;
+                border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
+
+                &:hover {
+                    background: #454545;
+                }
+
+                i {
+                    font-size: 20px;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .button-cart {
+            a {
+                @include fntfml(#333, 17px, 500, $poppins);
+                text-transform: uppercase;
+                padding: 0 30px;
+                line-height: 40px;
+                border: 1px solid #222;
+                background: #fff;
+                margin: 0 5px;
+                border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
+
+                &:hover {
+                    background: #eee;
+                    color: #666;
+                    border-color: #eee;
+                }
+            }
+        }
+    }
+
+    .discount {
+        form {
+            h5 {
+                @include fntfml(#333, 16px, 500, $poppins);
+                text-transform: capitalize;
+                margin-bottom: 40px;
+            }
+
+            input {
+                @include fntfml(#666, 15px, 500, $poppins);
+                text-transform: capitalize;
+                padding: 0 3%;
+                border: 0;
+                outline: 0;
+                padding-bottom: 15px;
+                width: 100%;
+                border-bottom: 1px solid #f1f1f1;
+
+
+            }
+
+            button {
+                padding: 0 30px;
+                line-height: 40px;
+                @include fntfml(#333, 16px, 500, $poppins);
+                text-transform: capitalize;
+                margin-top: 20px;
+                border: 1px solid #333;
+                background: #fff;
+                border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
+
+                &:hover {
+                    background: #222;
+                    color: #fff;
+
+                }
+
+            }
+        }
+    }
+
+    .right_part {
+        padding: 30px;
+        margin-left: 20px;
+        border: 1px solid #f1f1f1;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+
+        h3 {
+            @include fntfml(#222, 18px, 700, $poppins);
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        .cart_inner {
+            border-bottom: 1px solid #f1f1f1;
+
+            .subtotal {
+                padding-bottom: 15px;
+
+
+                h6 {
+                    @include fntfml(#333, 16px, 500, $poppins);
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+        .shipping {
+            padding: 30px 0;
+            border-bottom: 1px solid #f1f1f1;
+
+            h5 {
+                @include fntfml(#333, 16px, 500, $poppins);
+                text-transform: capitalize;
+                margin-bottom: 15px;
+            }
+
+            form {
+                .check {
+                    p {
+                        @include fntfml(#666, 15px, 400, $poppins);
+                        text-transform: capitalize;
+                        margin-bottom: 20px;
+
+                        span {
+                            @include fntfml(#666, 16px, 600, $poppins);
+                            text-transform: uppercase;
+                            margin-left: 3px;
+                        }
+
+                    }
+
+                    input {
+                        border: 1px solid #f1f1f1;
+                        cursor: pointer;
+                        margin-right: 10px;
+                        border-radius: 3px;
+                        -webkit-border-radius: 3px;
+                        -moz-border-radius: 3px;
+                        -ms-border-radius: 3px;
+                        -o-border-radius: 3px;
+
+
+
+                    }
+                }
+
+                .select {
+                    select {
+                        width: 100% !important;
+                        cursor: pointer;
+                        padding: 10px 3%;
+                        @include fntfml(#666, 16px, 400, $poppins);
+                        text-transform: capitalize;
+                        background: #fff;
+                        margin-bottom: 15px;
+                        border: 0;
+                        border: 1px solid #ccc !important;
+                        border-radius: 3px;
+                        -webkit-border-radius: 3px;
+                        -moz-border-radius: 3px;
+                        -ms-border-radius: 3px;
+                        -o-border-radius: 3px;
+                        
+
+                        option {
+                            background: #fff;
+                            border: 1px solid #333;
+                            padding:0 3%;
+
+                            &:hover {
+                                background: red !important;
+                            }
+
+                        }
+
+
+                    }
+                
+                }
+
+                .input {
+                    input {
+                        width: 100%;
+                        cursor: pointer;
+                        border: 0;
+                        padding: 10px 3%;
+                        outline: 0;
+                        background: transparent;
+                        border: 1px solid #ccc;
+                        margin-bottom: 20px;
+                        @include fntfml(#666, 16px, 400, $poppins);
+                        border-radius: 3px;
+                        -webkit-border-radius: 3px;
+                        -moz-border-radius: 3px;
+                        -ms-border-radius: 3px;
+                        -o-border-radius: 3px;
+                    }
+                }
+
+                button {
+                    background: #fff;
+                    cursor: pointer;
+                    border: 0;
+                    outline: 0;
+                    @include fntfml(#666, 16px, 500, $poppins);
+                    text-transform: uppercase;
+                    padding: 0 30px;
+                    line-height: 40px;
+                    border: 1px solid #333;
+                    border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    -ms-border-radius: 3px;
+                    -o-border-radius: 3px;
+
+                    &:hover {
+                        background: #222;
+                        color: #fff;
+                    }
+
+                }
+
+            }
+        }
+
+        .total_price {
+            padding: 25px 0;
+
+            .total {
+                h6 {
+                    @include fntfml(#333, 16px, 500, $poppins);
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+        .btn_n {
+            a{
+            display: block;
+            cursor: pointer;
+            background: #222;
+            color: #fff;
+            @include fntfml(#fff, 16px, 500, $poppins);
+            padding: 10px;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+            i{
+                font-size: 18px;
+                margin-left: 8px;
+            }
+            &:hover{
+                background:#454545;
+            }
+
+
+        }
+    }
+    }
+}

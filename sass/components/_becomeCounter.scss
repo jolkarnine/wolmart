@@ -1,0 +1,40 @@
+#become_counter{
+    padding: 100px 0;
+
+    .counter_head{
+        margin-bottom: 70px;
+        span {
+            @include fntfml(#336699, 18px, 600, $poppins);
+         
+        }
+    
+        h2 {
+            @include fntfml(#333, 40px, 700, $poppins);
+            margin: 15px 0;
+            line-height: 50px;
+        }
+    
+        p {
+            @include fntfml(#666, 14px, 400, $poppins);
+            line-height: 26px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .become_text{
+        h2{
+            @include fntfml(#ccc, 70px, 700, $poppins);
+            margin-bottom: 10px;
+        }
+        h5{
+            @include fntfml(#333, 25px, 500, $poppins);
+            text-transform: capitalize;
+            margin-bottom: 15px
+        }
+        p{
+            @include fntfml(#666, 14px, 400, $poppins);
+            padding: 0 55px;
+            line-height: 26px;
+        }
+    }
+}

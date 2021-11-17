@@ -1,0 +1,29 @@
+#become_work {
+    padding: 100px 0;
+
+    .work_text {
+
+        h2 {
+            @include fntfml(#fff, 40px, 700, $poppins);
+            margin-bottom: 40px;
+            line-height: 50px;
+        }
+
+        a {
+            @include fntfml(#fff,18px,500,$poppins);
+            text-transform: uppercase;
+            padding: 0 35px;
+            line-height: 50px;
+            border:2px solid #fff;
+            border-radius:3px ;
+            -webkit-border-radius:3px ;
+            -moz-border-radius:3px ;
+            -ms-border-radius:3px ;
+            -o-border-radius:3px ;
+            &:hover{
+                background: #fff;
+                color:#333;
+            }
+}
+    }
+}

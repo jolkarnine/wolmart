@@ -1,0 +1,49 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?eb609e83ab552ffc6f80b017d26ef83c") format("truetype"),
+url("./flaticon.woff?eb609e83ab552ffc6f80b017d26ef83c") format("woff"),
+url("./flaticon.woff2?eb609e83ab552ffc6f80b017d26ef83c") format("woff2"),
+url("./flaticon.eot?eb609e83ab552ffc6f80b017d26ef83c#iefix") format("embedded-opentype"),
+url("./flaticon.svg?eb609e83ab552ffc6f80b017d26ef83c#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "favourite": "\f101",
+    "user": "\f102",
+    "pin": "\f103",
+    "task-list": "\f104",
+    "cloud-computing": "\f105",
+    "logout": "\f106",
+);
+
+.flaticon-favourite:before {
+    content: map-get($flaticon-map, "favourite");
+}
+.flaticon-user:before {
+    content: map-get($flaticon-map, "user");
+}
+.flaticon-pin:before {
+    content: map-get($flaticon-map, "pin");
+}
+.flaticon-task-list:before {
+    content: map-get($flaticon-map, "task-list");
+}
+.flaticon-cloud-computing:before {
+    content: map-get($flaticon-map, "cloud-computing");
+}
+.flaticon-logout:before {
+    content: map-get($flaticon-map, "logout");
+}

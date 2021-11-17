@@ -1,0 +1,566 @@
+#account_part {
+    padding-bottom: 50px;
+
+    .account_main {
+        padding-top: 50px;
+        border-top: 1px solid #f1f1f1;
+    }
+
+    .accout_button {
+        button {
+            width: 100%;
+            text-align: left;
+            @include fntfml(#333, 17px, 500, $poppins);
+            text-transform: capitalize;
+            border-bottom: 1px solid #f1f1f1;
+            padding-left: 0;
+            padding: 15px 0;
+
+            a {
+
+                @include fntfml(#333, 17px, 500, $poppins);
+
+            }
+        }
+
+        button.active {
+            color: #336699 !important;
+            background-color: transparent !important;
+        }
+    }
+
+    .account_body {
+        .dashboard {
+            p {
+                @include fntfml(#666, 16px, 400, $poppins);
+                text-transform: capitalize;
+                margin-bottom: 10px;
+
+                span {
+                    @include fntfml(#333, 16px, 500, $poppins);
+                    text-transform: capitalize;
+                    margin: 0 5px;
+                }
+
+                a {
+                    @include fntfml(#336699, 16px, 400, $poppins);
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .a_body {
+                @include fntfml(#666, 14px, 400, $poppins);
+                line-height: 26px;
+                margin-bottom: 25px;
+
+                a {
+                    @include fntfml(#336699, 14px, 400, $poppins);
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            ul {
+                li {
+                    width: 31.95%;
+                    text-align: center;
+                    padding: 40px 0;
+                    margin-bottom: 25px;
+                    margin-right: 20px;
+                    border: 1px solid #eee;
+                    border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    -ms-border-radius: 3px;
+                    -o-border-radius: 3px;
+
+                    &:hover {
+                        box-shadow: 1px 1px 10px rgba(0, 0, 0, .10);
+
+                        i {
+                            color: #336699;
+                            transform: scale(1.2);
+                            -webkit-transform: scale(1.2);
+                            -moz-transform: scale(1.2);
+                            -ms-transform: scale(1.2);
+                            -o-transform: scale(1.2);
+                        }
+
+                        p {
+                            color: #336699;
+                            text-decoration: underline;
+                        }
+
+                        transform: scale(1);
+                        -ms-transform: scale(1);
+                        -o-transform: scale(1);
+                        -webkit-transform: scale(1);
+                        -moz-transform: scale(1);
+                    }
+
+                    &:nth-child(3) {
+                        margin-right: 0;
+
+                    }
+
+                    &:nth-child(6) {
+                        margin-right: 0;
+
+                    }
+
+                    i {
+                        color: #333;
+                        font-size: 50px;
+                        margin-bottom: 30px;
+                    }
+
+                    p {
+                        @include fntfml(#666, 16px, 400, $poppins);
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+
+    .order1 {
+        a {
+            @include fntfml(#fff, 18px, 500, $poppins);
+            padding: 0px 20px;
+            line-height: 40px;
+            text-transform: uppercase;
+            margin-top: 30px;
+            background: #000;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+
+            &:hover {
+                background: #454545;
+            }
+
+            i {
+                margin-left: 5px;
+                font-size: 18px;
+            }
+
+        }
+
+        .or_text {
+            margin-bottom: 20px;
+
+            h4 {
+                @include fntfml(#333, 30px, 500, $poppins);
+                text-transform: capitalize;
+            }
+
+            i {
+                color: #666;
+                font-size: 25px;
+                margin-right: 15px;
+            }
+        }
+
+        ul {
+            border-bottom: 1px solid #f1f1f1;
+            padding: 25px 0;
+
+            li {
+                width: 20%;
+                @include fntfml(#666, 16px, 400, $poppins);
+                text-transform: capitalize;
+
+                a {
+                    padding: 0 25px;
+                    @include fntfml(#666, 16px, 400, $poppins);
+                    line-height: 35px;
+                    border: 2px solid #e1e1e1;
+                    background: #a6a6a6;
+                    color: #333;
+                    border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    -ms-border-radius: 3px;
+                    -o-border-radius: 3px;
+
+                    &:hover {
+                        background: #000;
+                        color: #fff;
+                        border-color: #000;
+                    }
+                }
+
+            }
+
+            li.status {
+                @include fntfml(#333, 18px, 500, $poppins);
+
+
+            }
+        }
+    }
+
+    .download {
+        .download_text {
+            h4 {
+                @include fntfml(#333, 25px, 500, $poppins);
+                text-transform: capitalize;
+                margin-bottom: 25px;
+            }
+
+            i {
+                color: #666;
+                font-size: 23px;
+                margin-right: 10px;
+            }
+
+            p {
+                @include fntfml(#666, 14px, 400, $poppins);
+                margin-bottom: 30px;
+            }
+
+            a {
+                padding: 0 30px;
+                @include fntfml(#fff, 16px, 500, $poppins);
+                line-height: 45px;
+                background: #000;
+                text-transform: uppercase;
+                border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
+
+                &:hover {
+                    background: #454545;
+                }
+
+                i {
+                    color: #fff;
+                    font-size: 18px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    .address {
+        .add_text {
+            h4 {
+                @include fntfml(#333, 25px, 600, $poppins);
+                text-transform: capitalize;
+
+                i {
+                    color: #666;
+                    font-size: 25px;
+                    margin-right: 10px;
+                }
+            }
+
+            p {
+                @include fntfml(#666, 14px, 400, $poppins);
+                margin-bottom: 25px;
+            }
+        }
+
+
+        .address_text {
+
+            h5 {
+                @include fntfml(#333, 20px, 500, $poppins);
+                padding-bottom: 20px;
+                border-bottom: 1px solid #f1f1f1;
+            }
+
+            .address_text_inner {
+                ul.name {
+                    margin-top: 20px;
+
+                    li {
+                        @include fntfml(#666, 14px, 400, $poppins);
+                        margin-bottom: 15px;
+                        text-transform: capitalize;
+
+                    }
+                }
+
+                ul {
+                    margin-top: 20px;
+
+                    li {
+                        @include fntfml(#333, 14px, 400, $poppins);
+                        margin-bottom: 15px;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+
+            a {
+                @include fntfml(#336699, 15px, 500, $poppins);
+                text-transform: uppercase;
+                margin-top: 20px;
+                padding-bottom: 2px;
+                position: relative;
+
+                &:hover::after {
+                    transform: scale(1);
+                    -webkit-transform: scale(1);
+                    -moz-transform: scale(1);
+                    -ms-transform: scale(1);
+                    -o-transform: scale(1);
+                }
+
+                i {
+                    color: #336699;
+                    font-size: 18px;
+                    margin-left: 10px;
+                }
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 3px;
+                    background: #336699;
+                    transform: scale(0);
+                    -webkit-transform: scale(0);
+                    -moz-transform: scale(0);
+                    -ms-transform: scale(0);
+                    -o-transform: scale(0);
+                    transition: all linear .2s;
+                    -webkit-transition: all linear .2s;
+                    -moz-transition: all linear .2s;
+                    -ms-transition: all linear .2s;
+                    -o-transition: all linear .2s;
+                }
+
+            }
+        }
+    }
+
+    .accout_detail {
+        h4 {
+            @include fntfml(#333, 25px, 600, $poppins);
+            text-transform: capitalize;
+
+            i {
+                color: #666;
+                font-size: 25px;
+                margin-right: 10px;
+            }
+        }
+
+        form {
+            .name {
+
+                .fast_name {
+                    width: 48%;
+                    float: left;
+                    margin-right: 4%;
+
+                    label {
+                        @include fntfml(#666, 14px, 400, $poppins);
+                        margin-bottom: 8px;
+                    }
+
+                    input {
+                        width: 100%;
+                        @include fntfml(#666, 16px, 400, $poppins);
+                        border: 0;
+                        border: 1px solid #eee;
+                        margin-bottom: 30px;
+                        padding: 10px 3%;
+                        text-transform: capitalize;
+                        border-radius: 3px;
+                        -webkit-border-radius: 3px;
+                        -moz-border-radius: 3px;
+                        -ms-border-radius: 3px;
+                        -o-border-radius: 3px;
+                    }
+                }
+
+                .last_name {
+                    width: 48%;
+                    float: left;
+
+                    label {
+                        @include fntfml(#666, 14px, 400, $poppins);
+                        margin-bottom: 8px;
+                    }
+
+                    input {
+                        width: 100%;
+                        @include fntfml(#666, 16px, 400, $poppins);
+                        border: 0;
+                        border: 1px solid #eee;
+                        padding: 10px 3%;
+                        text-transform: capitalize;
+                        margin-bottom: 30px;
+                        border-radius: 3px;
+                        -webkit-border-radius: 3px;
+                        -moz-border-radius: 3px;
+                        -ms-border-radius: 3px;
+                        -o-border-radius: 3px;
+                    }
+                }
+
+            }
+
+            .display {
+                margin-bottom: 30px;
+
+                input {
+                    width: 100%;
+                    @include fntfml(#666, 16px, 400, $poppins);
+                    border: 0;
+                    border: 1px solid #eee;
+                    padding: 10px 3%;
+                    text-transform: capitalize;
+                    border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    -ms-border-radius: 3px;
+                    -o-border-radius: 3px;
+                }
+
+                label {
+                    @include fntfml(#666, 14px, 400, $poppins);
+                    margin-bottom: 8px;
+                }
+
+                p {
+                    @include fntfml(#666, 14px, 300, $poppins);
+                    margin-top: 5px;
+                }
+            }
+
+            .email {
+                margin-bottom: 30px;
+
+                input {
+                    width: 100%;
+                    @include fntfml(#666, 16px, 400, $poppins);
+                    border: 0;
+                    border: 1px solid #eee;
+                    padding: 10px 3%;
+                    text-transform: capitalize;
+                    border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    -ms-border-radius: 3px;
+                    -o-border-radius: 3px;
+                }
+
+                label {
+                    @include fntfml(#666, 14px, 400, $poppins);
+                    margin-bottom: 8px;
+                }
+            }
+
+            .password {
+                margin-bottom: 30px;
+
+                h5 {
+                    @include fntfml(#333, 16px, 500, $poppins);
+                    text-transform: capitalize;
+                    margin-bottom: 30px;
+                }
+
+                input {
+                    width: 100%;
+                    @include fntfml(#666, 16px, 400, $poppins);
+                    border: 0;
+                    border: 1px solid #eee;
+                    margin-bottom: 25px;
+                    padding: 10px 3%;
+                    text-transform: capitalize;
+                    border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    -ms-border-radius: 3px;
+                    -o-border-radius: 3px;
+                }
+
+                label {
+                    @include fntfml(#666, 14px, 400, $poppins);
+                    margin-bottom: 8px;
+                }
+            }
+
+            .new {
+                input {
+                    width: 100%;
+                    @include fntfml(#666, 16px, 400, $poppins);
+                    border: 0;
+                    border: 1px solid #eee;
+                    margin-bottom: 25px;
+                    padding: 10px 3%;
+                    text-transform: capitalize;
+                    border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    -ms-border-radius: 3px;
+                    -o-border-radius: 3px;
+                }
+
+                label {
+                    @include fntfml(#666, 14px, 400, $poppins);
+                    margin-bottom: 8px;
+                }
+            }
+
+            .confirm {
+
+                input {
+                    width: 100%;
+                    @include fntfml(#666, 16px, 400, $poppins);
+                    border: 0;
+                    border: 1px solid #eee;
+                    margin-bottom: 25px;
+                    padding: 10px 3%;
+                    text-transform: capitalize;
+                    border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    -ms-border-radius: 3px;
+                    -o-border-radius: 3px;
+                }
+
+                label {
+                    @include fntfml(#666, 14px, 400, $poppins);
+                    margin-bottom: 8px;
+                }
+
+            }
+
+            button {
+                padding: 0 30px;
+                line-height: 40px;
+                border: 0;
+                background: #000;
+                margin-top: 30px;
+                color: #fff;
+                border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
+                &:hover{
+                    background: #454545;
+                }
+            }
+
+        }
+
+    }
+
+}

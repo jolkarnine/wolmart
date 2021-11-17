@@ -1,0 +1,387 @@
+#shop_main {
+    padding: 30px 0px 90px;
+
+    .filter {
+        h5 {
+            @include fntfml(#363636, 17px, 500, $poppins);
+            text-transform: capitalize;
+
+            span {
+                @include fntfml(#333, 16px, 300, $poppins);
+                text-transform: capitalize;
+                float: right;
+            }
+        }
+    }
+
+    .select {
+        margin-top: -5px;
+
+        h6 {
+            @include fntfml(#363636, 16px, 500, $poppins);
+            text-transform: capitalize;
+
+
+            select {
+                width: 150px;
+                @include fntfml(#333, 13px, 300, $poppins);
+                border: 0;
+                background: none;
+                cursor: pointer;
+                margin-left: 20px;
+                padding: 5px 10px;
+                border: 1px solid #d7d7d7;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+
+                option {
+                    background: #fff;
+                    @include fntfml(#333, 13px, 300, $poppins);
+                }
+            }
+        }
+    }
+
+    .icon {
+        margin-top: -5px;
+
+        select {
+            @include fntfml(#333, 13px, 300, $poppins);
+            width: 90px;
+            padding: 5px 10px;
+            background: 0;
+            border: 0;
+            margin-right: 20px;
+            border: 1px solid #d7d7d7;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+
+        }
+
+        i {
+            color: #333;
+            font-size: 22px;
+            margin-right: 10px;
+        }
+
+        .i_color {
+            color: #d7d7d7;
+            transition: $trans;
+            -webkit-transition: $trans;
+            -moz-transition: $trans;
+            -ms-transition: $trans;
+            -o-transition: $trans;
+
+            &:hover {
+                color: #333;
+            }
+        }
+    }
+
+    #accordion {
+
+        h4 {
+            background: #fff;
+            @include fntfml(#333, 16px, 500, $poppins);
+            text-transform: capitalize;
+            border-bottom: 1px solid #d7d7d7;
+            padding-left: 0;
+
+            &::after {
+                background: #666;
+                width: 13px;
+                height: 2px;
+                right: 0;
+            }
+
+            &::before {
+                background: #666;
+                width: 13px;
+                height: 2px;
+                right: 0;
+
+            }
+
+            label {
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    bottom: -10px;
+                    width: 130px;
+                    height: 2px;
+                    z-index: 1;
+                    background: #666;
+                }
+            }
+
+            .s_title {
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    bottom: -10px;
+                    width: 50px;
+                    height: 2px;
+                    z-index: 1;
+                    background: #666;
+                }
+            }
+
+            .t_title {
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    bottom: -10px;
+                    width: 40px;
+                    height: 2px;
+                    z-index: 1;
+                    background: #666;
+                }
+            }
+
+            .f_title {
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    bottom: -10px;
+                    width: 55px;
+                    height: 2px;
+                    z-index: 1;
+                    background: #666;
+                }
+            }
+
+            .fi_title {
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    bottom: -10px;
+                    width: 60px;
+                    height: 2px;
+                    z-index: 1;
+                    background: #666;
+                }
+            }
+
+        }
+
+        .accordion-content {
+            border: 0;
+            padding-left: 0;
+
+            ul {
+                padding: 20px 0;
+
+                li {
+                    input {
+
+                        background: 0;
+                        border: 0;
+                        outline: 0;
+                        padding: 2px;
+                        margin-right: 10px;
+                    }
+
+                    a {
+                        @include fntfml(#333, 15px, 300, $poppins);
+                        padding: 5px 0;
+                        transition: $trans;
+                        -webkit-transition: $trans;
+                        -moz-transition: $trans;
+                        -ms-transition: $trans;
+                        -o-transition: $trans;
+
+                        &:hover {
+                            color: #336699;
+                        }
+
+                    }
+                }
+            }
+
+            form {
+                input {
+                    width: 60px;
+                    border: 0;
+                    outline: 0;
+                    border: 1px solid #d7d7d7;
+                    padding: 5px;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                }
+
+                span {
+                    @include fntfml(#666, 20px, 600, $poppins);
+                }
+
+                a {
+                    @include fntfml(#fff, 16px, 400, $poppins);
+                    width: 45px;
+                    padding: 8px 10px;
+                    background: #336699;
+                    margin-left: 5px;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                }
+            }
+
+        }
+
+    }
+
+    // col-lg-9 part
+    .cloth_main {
+        .cloth_inner {
+            &:first-child {
+                margin-bottom: 25px;
+            }
+
+            &:hover {
+                .cloth_inner_img {
+                    .shop_icon {
+                        ul {
+                            visibility: visible;
+                            opacity: 1;
+                        }
+
+                    }
+                }
+            }
+
+            .cloth_inner_img {
+                position: relative;
+                cursor: pointer;
+
+                a {
+                    display: block;
+
+                    img.r_bag {
+                        display: none;
+                    }
+                }
+
+                &:hover {
+                    a {
+                        img.r_bag {
+                            display: block;
+                        }
+
+                        img.b_bag {
+                            display: none;
+                        }
+                    }
+                }
+
+                .shop_icon {
+                    position: absolute;
+                    left: 50%;
+                    bottom: 10px;
+                    transform: translatex(-50%);
+                    -webkit-transform: translatex(-50%);
+                    -moz-transform: translatex(-50%);
+                    -ms-transform: translatex(-50%);
+                    -o-transform: translatex(-50%);
+                
+
+                ul {
+                    background: #fff;
+                    padding: 10px 15px;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: $trans;
+                    -webkit-transition: $trans;
+                    -moz-transition: $trans;
+                    -ms-transition: $trans;
+                    -o-transition: $trans;
+
+                    li {
+                        margin: 0;
+
+                        a {
+                            font-size: 20px;
+                            color: #666;
+                            margin: 0px 10px;
+                            border-radius: 5px;
+                            -webkit-border-radius: 5px;
+                            -moz-border-radius: 5px;
+                            -ms-border-radius: 5px;
+                            -o-border-radius: 5px;
+
+
+                            &:hover {
+
+                                color: #336699;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        }
+
+        .cloth_inner_text {
+            p {
+                @include fntfml(#333, 14px, 400, $poppins);
+                margin: 20px 0 5px;
+                text-transform: capitalize;
+            }
+
+            a {
+
+                i {
+                    color: #f77c29;
+                    font-size: 13px;
+
+
+                }
+
+                .s_icon {
+                    color: #c2c2c2;
+                }
+            }
+
+            span {
+                @include fntfml(#666, 13px, 400, $poppins);
+                margin-left: 5px;
+            }
+
+            h4 {
+                @include fntfml(#333, 16px, 500, $poppins);
+                margin-top: 5px;
+
+                span {
+                    @include fntfml(#aaa, 16px, 500, $poppins);
+                    text-decoration: line-through;
+                    margin-left: 10px;
+                }
+            }
+
+        }
+    }
+}

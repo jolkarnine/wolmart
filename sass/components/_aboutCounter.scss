@@ -1,0 +1,26 @@
+#about_counter {
+    padding-bottom: 100px;
+    .counter_text {
+        h2 {
+            @include fntfml(#ccc, 50px, 800, $poppins);
+            text-transform: uppercase;
+            margin-bottom: 15px;
+
+            
+        }
+
+        h4 {
+            @include fntfml(#333, 25px, 600, $poppins);
+            text-transform: capitalize;
+           margin-bottom:15px;
+
+            
+        }
+
+        p {
+            @include fntfml(#666, 14px, 400, $poppins);
+            line-height: 26px;
+            padding: 0 51px;
+        }
+    }
+}

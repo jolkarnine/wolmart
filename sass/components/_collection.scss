@@ -1,0 +1,93 @@
+#collection {
+    padding-bottom: 60px;
+
+    .colle_img {
+        position: relative;
+
+        img {
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+        }
+
+        .colle_text {
+            position: absolute;
+            left: 25px;
+            bottom: 40px;
+
+            span {
+                @include fntfml(#333, 17px, 400, $poppins);
+                text-transform: capitalize;
+
+
+                strong {
+                    @include fntfml(#f77c29, 18px, 600, $poppins);
+                    margin-left: 7px;
+                    text-transform: uppercase;
+                }
+            }
+
+            h2 {
+                @include fntfml(#333, 26px, 700, $poppins);
+                text-transform: uppercase;
+                margin-top: 5px;
+            }
+
+            h4 {
+                @include fntfml(#333, 23px, 400, $poppins);
+                text-transform: capitalize
+            }
+
+            p {
+                @include fntfml(#666, 15px, 500, $poppins);
+                margin-top: 15px;
+
+                span {
+                    @include fntfml(#f77c29, 15px, 600, $poppins);
+                    margin-left: 7px;
+
+                }
+            }
+
+        }
+
+        .colle_text_1 {
+            position: absolute;
+            left: 25px;
+            bottom: 40px;
+
+            span {
+                @include fntfml(#c4c4c5, 20px, 400, $poppins);
+                text-transform: capitalize;
+
+            }
+
+            h2 {
+                @include fntfml(#fff, 26px, 800, $poppins);
+                text-transform: uppercase;
+                margin-top: 5px;
+            }
+
+            h4 {
+                @include fntfml(#fff, 23px, 400, $poppins);
+                text-transform: capitalize
+            }
+
+            p {
+                @include fntfml(#fff, 15px, 500, $poppins);
+                margin-top: 15px;
+                text-transform: capitalize;
+
+                span {
+
+                    @include fntfml(#f77c29, 15px, 600, $poppins);
+                    margin-left: 7px;
+                }
+            }
+
+        }
+
+    }
+}

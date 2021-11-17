@@ -1,0 +1,26 @@
+#bread {
+    nav {
+        ol {
+            li {
+                a {
+                    @include fntfml(#666, 14px, 400, $poppins);
+                    transition: $trans;
+                    -webkit-transition: $trans;
+                    -moz-transition: $trans;
+                    -ms-transition: $trans;
+                    -o-transition: $trans;
+
+                    &:hover {
+                        color: #222;
+                    }
+                }
+            }
+
+            li.active {
+                @include fntfml(#333, 14px, 400, $poppins);
+                margin-top: 2px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}

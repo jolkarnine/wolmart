@@ -1,0 +1,31 @@
+#about_marketing{
+    padding-bottom: 100px;
+    .about_border{
+        border-top: 1px solid #f1f1f1;
+        padding-top:90px;
+        .marketing_text{
+            h1{
+                @include fntfml(#333, 40px, 700, $poppins);
+                text-transform: capitalize;
+                line-height: 50px;
+                margin-bottom: 20px;
+              
+            }
+            p{
+                @include fntfml(#666, 16px, 400, $poppins);
+                    line-height: 30px;
+                    padding: 0 113px;
+                    padding-bottom: 40px;
+                }
+            }
+
+            .marketing_img{
+                border-radius:20px ;
+                -webkit-border-radius:20px ;
+                -moz-border-radius:20px ;
+                -ms-border-radius:20px ;
+                -o-border-radius:20px ;
+                overflow: hidden;
+}
+        }
+    }

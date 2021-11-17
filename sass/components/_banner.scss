@@ -1,0 +1,115 @@
+#banner {
+
+    .banner_item {
+                height: 540px;
+        // padding: 152px 0 100px;
+        img{
+            padding-top: 55px;
+        }
+
+        .banner_text {
+            text-align: right;
+            padding:150px 0 20px;
+
+            h3 {
+                @include fntfml(#666, 35px, 500, $poppins);
+                text-transform: capitalize;
+
+                span {
+                    @include fntfml(#666, 40px, 500, $poppins);
+                    margin-left: 10px;
+                    position: relative;
+
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        left: 0;
+                        bottom: 4px;
+                        width: 100%;
+                        height: 3px;
+                        background: #f77c29;
+                    }
+
+                }
+            }
+
+            h2 {
+                @include fntfml(#222, 50px, 700, $poppins);
+                text-transform: uppercase;
+                margin-top: 5px;
+            }
+
+            p {
+                @include fntfml(#666, 25px, 400, $poppins);
+                margin: 5px 0px 20px;
+
+                span {
+                    @include fntfml(#f77c29, 25px, 700, $poppins);
+                    margin-left: 7px;
+                    text-transform: uppercase;
+                }
+            }
+
+            a {
+                @include fntfml(#666, 16px, 500, $poppins);
+                text-transform: uppercase;
+                padding: 0 35px;
+                line-height: 50px;
+                border: 2px solid #333;
+                border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
+                transition: $trans;
+                -webkit-transition: $trans;
+                -moz-transition: $trans;
+                -ms-transition: $trans;
+                -o-transition: $trans;
+
+                i {
+                    color: #666;
+                    font-size: 17px;
+                    margin-left: 5px;
+                }
+
+                &:hover {
+                    background: #333;
+                    color: #fff;
+
+                    i {
+
+                        color: #fff;
+
+                    }
+                }
+            }
+            
+        }
+    }
+    .net-arrow{
+        position: absolute;
+        right:250px;
+        top:50%;
+        color:#666;
+        font-size: 20px;
+        transform: translatey(-50%);
+        -webkit-transform: translatey(-50%);
+        -moz-transform: translatey(-50%);
+        -ms-transform: translatey(-50%);
+        -o-transform: translatey(-50%);
+}
+.pre-arrow{
+    position: absolute;
+    left:250px;
+    top:50%;
+    color:#666;
+    font-size: 20px;
+    transform: translatey(-50%);
+    -webkit-transform: translatey(-50%);
+    -moz-transform: translatey(-50%);
+    -ms-transform: translatey(-50%);
+    -o-transform: translatey(-50%);
+    z-index: 999;
+}
+}

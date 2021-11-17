@@ -1,0 +1,259 @@
+#logout{
+    
+    padding-bottom: 60px;
+   .logpart{
+       border-top: 1px solid #f1f1f1;
+       padding-top: 60px;
+    .form_body {
+        padding: 40px;
+        
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.10) !important;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            color: #336699;
+            border-bottom: 3px solid #336699;
+            background-color: transparent;
+            text-transform: uppercase;
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            -o-border-radius: 0;
+        }
+
+        ul {
+            position: relative;
+            z-index: 1;
+
+            &::after {
+                position: absolute;
+                content: "";
+                left: 0;
+                bottom: 0px;
+                background: #eee;
+                width: 100%;
+                height: 3px;
+                z-index: -1;
+            }
+
+            li {
+                button {
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    display: block;
+                    width: 200px;
+                    color: #000;
+
+                    &:hover {
+                        color: #336699;
+                        border-bottom: 3px solid #336699;
+                        border-radius: 0;
+                        -webkit-border-radius: 0;
+                        -moz-border-radius: 0;
+                        -ms-border-radius: 0;
+                        -o-border-radius: 0;
+                    }
+                }
+            }
+        }
+
+        form {
+            label {
+                @include fntfml(#666, 14px, 400, $poppins);
+            }
+
+            input {
+                border-radius: 0 !important;
+                -webkit-border-radius: 0 !important;
+                -moz-border-radius: 0 !important;
+                -ms-border-radius: 0 !important;
+                -o-border-radius: 0 !important;
+            }
+
+            .form-check-input:checked {
+                background-color: #000;
+
+            }
+
+            .form-check-input {
+                margin-top: 6px;
+            }
+
+            .form-check-input:focus {
+                box-shadow: 0 0 0 0;
+                border-color: #ccc;
+
+            }
+
+            .form-check a {
+                float: right;
+                color: #a94442;
+                transition: $trans;
+                -webkit-transition: $trans;
+                -moz-transition: $trans;
+                -ms-transition: $trans;
+                -o-transition: $trans;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            button {
+                display: block;
+                width: 100%;
+                @include fntfml(#fff, 14px, 700, $poppins);
+                text-transform: uppercase;
+                background: #336699;
+                border-color: #336699;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                -ms-border-radius: 0;
+                -o-border-radius: 0;
+                transition: $trans;
+                -webkit-transition: $trans;
+                -moz-transition: $trans;
+                -ms-transition: $trans;
+                -o-transition: $trans;
+
+                &:hover {
+                    background: #3c78b4;
+                    border-color: #3c78b4;
+                }
+            }
+
+            .para {
+                text-align: left;
+
+                span {
+                    @include fntfml(#969696, 14px, 400, $poppins);
+                    line-height: 24px;
+
+                    a {
+                        color: #336699;
+                        margin-left: 8px;
+                        transition: $trans;
+                        -webkit-transition: $trans;
+                        -moz-transition: $trans;
+                        -ms-transition: $trans;
+                        -o-transition: $trans;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                a.link {
+                    margin-top: 20px;
+                    @include fntfml(#336699, 14px, 400, $poppins);
+                    transition: $trans;
+                    -webkit-transition: $trans;
+                    -moz-transition: $trans;
+                    -ms-transition: $trans;
+                    -o-transition: $trans;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                }
+            }
+
+            .form-check {
+                label {
+                    a {
+                        color: #336699;
+                        margin-left: 7px;
+                    }
+                }
+            }
+
+        }
+
+        .social {
+            p {
+                margin: 30px 0;
+                @include fntfml(#333, 16px, 400, $poppins);
+
+            }
+
+            a {
+
+                i {
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    font-size: 14px;
+                    color: #3c78b4;
+                    border: 1px solid#3c78b4;
+                    margin: 0 5px;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                }
+
+                i.fa-facebook-f {
+                    transition: $trans;
+                    -webkit-transition: $trans;
+                    -moz-transition: $trans;
+                    -ms-transition: $trans;
+                    -o-transition: $trans;
+
+                    &:hover {
+                        color: #fff;
+                        background: #3c78b4;
+                    }
+                }
+
+
+                i.fa-twitter {
+                    color: #1da1f2;
+                    border-color: #1da1f2;
+                    transition: $trans;
+                    -webkit-transition: $trans;
+                    -moz-transition: $trans;
+                    -ms-transition: $trans;
+                    -o-transition: $trans;
+
+                    &:hover {
+
+                        color: #fff;
+                        background: #1da1f2;
+
+                    }
+                }
+
+                i.fa-google {
+                    color: #e34133;
+                    border-color: #e34133;
+                    transition: $trans;
+                    -webkit-transition: $trans;
+                    -moz-transition: $trans;
+                    -ms-transition: $trans;
+                    -o-transition: $trans;
+
+                    &:hover {
+                        color: #fff;
+                        background: #e34133;
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+}

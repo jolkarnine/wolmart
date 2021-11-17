@@ -1,0 +1,42 @@
+#menu {
+    .shop_category {
+        background: #fff;
+        border-right: 1px solid #e2e2e2;
+        border-left: 1px solid #e2e2e2;
+        transition: $trans;
+        -webkit-transition: $trans;
+        -moz-transition: $trans;
+        -ms-transition: $trans;
+        -o-transition: $trans;
+
+        &:hover {
+            background: #336699;
+
+            a {
+                span {
+                    color: #fff;
+                }
+
+                i {
+                    color: #fff;
+                }
+            }
+
+            .shop_drop_menu {
+                visibility: visible;
+                opacity: 1;
+            }
+
+        }
+
+        .shop_drop_menu {
+            visibility: hidden;
+            opacity: 0;
+            transition: $trans;
+            -webkit-transition: $trans;
+            -moz-transition: $trans;
+            -ms-transition: $trans;
+            -o-transition: $trans;
+        }
+    }
+}

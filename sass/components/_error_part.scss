@@ -1,0 +1,41 @@
+#error {
+    padding: 150px 0 100px 0;
+    background: #f7f7f7;
+
+    .error_img {
+
+        h2 {
+            @include fntfml(#333, 30px, 700, $poppins);
+            text-transform: capitalize;
+            margin-top: 80px;
+
+            span {
+                @include fntfml(#ff9933, 30px, 700, $poppins);
+            }
+        }
+
+        p {
+            @include fntfml(#666, 14px, 400, $poppins);
+            margin-top: 15px
+        }
+
+        a {
+            @include fntfml(#fff, 16px, 500, $poppins);
+            text-transform: uppercase;
+            padding: 0 30px;
+            line-height: 50px;
+            background: #333;
+            margin-top: 35px;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+            i{
+                font-size: 20px;
+                margin-left: 10px;
+                
+            }
+        }
+    }
+}

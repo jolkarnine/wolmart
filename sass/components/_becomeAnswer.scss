@@ -1,0 +1,33 @@
+#answer{
+    padding: 100px 0;
+    .answer_head{
+        margin-bottom: 40px;
+        span {
+            @include fntfml(#336699, 20px, 500, $poppins);
+
+        }
+
+        h2 {
+            @include fntfml(#333, 35px, 700, $poppins);
+            margin: 15px 0;
+            line-height: 40px;
+        }
+    }
+
+    .answer_inner{
+        .answer_part_1{
+            h4{
+                @include fntfml(#333, 20px, 500, $poppins);
+                margin-bottom: 25px;
+            }
+            p{
+                @include fntfml(#666, 15px, 400, $poppins);
+                line-height: 28px;
+            }
+            &:first-child{
+                margin-bottom: 50px;
+            }
+        }
+        
+    }
+}

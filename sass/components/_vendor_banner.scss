@@ -1,0 +1,307 @@
+.vendor_banner {
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   overflow: hidden;
+   position: relative;
+   margin-bottom: 20px;
+
+   .overly {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 35%;
+      height: 100%;
+      background: #282a30;
+
+      .vendor_text {
+         position: absolute;
+         left: 50px;
+         top: 50px;
+
+         img {
+            empty-cells: 80px;
+            height: 80px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+         }
+
+         h4 {
+            @include fntfml(#fff, 20px, 700, $poppins);
+            text-transform: capitalize;
+            margin: 23px 0;
+         }
+
+         p {
+            @include fntfml(#ddd, 14px, 400, $poppins);
+            margin-bottom: 10px;
+
+            i {
+               margin-right: 5px;
+            }
+         }
+
+         a {
+            @include fntfml(#ddd, 16px, 400, $poppins);
+
+            i {
+               margin-right: 8px;
+            }
+
+            &:hover {
+               color: #a96c31;
+            }
+         }
+
+         ul {
+            margin-top: 30px;
+
+            li {
+               a {
+
+                  i {
+                     width: 40px;
+                     height: 40px;
+                     line-height: 40px;
+                     text-align: center;
+                     border: 1px solid #fff;
+                     color: #ddd;
+                     margin-right: 10px;
+                     border-radius: 50%;
+                     -webkit-border-radius: 50%;
+                     -moz-border-radius: 50%;
+                     -ms-border-radius: 50%;
+                     -o-border-radius: 50%;
+                  }
+
+                  i.fa-facebook-f {
+                     &:hover {
+                        background: #1d4785;
+                        border-color: #1d4785;
+                     }
+                  }
+
+                  i.fa-twitter {
+                     &:hover {
+                        background: #0792cb;
+                        border-color: #0792cb;
+                     }
+                  }
+
+                  i.fa-pinterest {
+                     &:hover {
+                        background: #cf5d0b;
+                        border-color: #cf5d0b;
+                     }
+                  }
+
+                  i.fa-instagram {
+                     &:hover {
+                        background: #ab080a;
+                        border-color: #ab080a;
+                     }
+                  }
+               }
+
+            }
+         }
+      }
+   }
+}
+
+.product {
+   h4 {
+      padding: 20px;
+      border: 1px solid #eee;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+
+      a {
+         @include fntfml(#333, 16px, 500, $poppins);
+         text-transform: capitalize;
+
+         &:hover {
+            color: #336699;
+         }
+      }
+   }
+}
+
+.main_lamp {
+   &:hover {
+      .click_lamp {
+         .lamp_timer {
+            display: none;
+         }
+
+         .vendor_icon {
+            ul {
+               li {
+                  a {
+                     visibility: visible;
+                     opacity: 1;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .click_lamp {
+      position: relative;
+
+      .lamp_timer {
+         position: absolute;
+         left: 15px;
+         bottom: 10px;
+         width: 90%;
+
+         ul {
+            visibility: visible !important;
+            opacity: 1 !important;
+            background: #282a30 !important;
+            padding: 5px 20px !important;
+            border-radius: 5px !important;
+            -webkit-border-radius: 5px !important;
+            -moz-border-radius: 5px !important;
+            -ms-border-radius: 5px !important;
+            -o-border-radius: 5px !important;
+
+            li {
+               @include fntfml(#ddd, 13px, 500, $poppins);
+
+               span {
+                  display: block;
+                  margin-right: 32px;
+                  @include fntfml(#ddd, 13px, 500, $poppins);
+               }
+            }
+         }
+      }
+
+      .vendor_icon {
+         position: absolute !important;
+         top: 20px !important;
+         left: 80% !important;
+         width: 0;
+
+         ul {
+            padding: 0 !important;
+            background: transparent;
+
+            li {
+               a {
+                  width: 40px;
+                  height: 40px;
+                  line-height: 40px;
+                  text-align: center;
+                  background: #fff;
+                  color: #666;
+                  visibility: hidden;
+                  opacity: 0;
+                  margin: 5px 0 !important;
+                  border-radius: 50% !important;
+                  -webkit-border-radius: 50% !important;
+                  -moz-border-radius: 50% !important;
+                  -ms-border-radius: 50% !important;
+                  -o-border-radius: 50% !important;
+                  transition: all linear 0.4s;
+                  -webkit-transition: all linear 0.4s;
+                  -moz-transition: all linear 0.4s;
+                  -ms-transition: all linear 0.4s;
+                  -o-transition: all linear 0.4s;
+               }
+            }
+         }
+      }
+
+   }
+}
+
+
+
+// accordion some work
+#accordion {
+   .contact_input {
+
+      form {
+         padding-top: 10px;
+
+         input {
+            width: 100% !important;
+            display: block;
+            padding: 10px 3%;
+            border: 0;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            @include fntfml(#666, 13px, 400, $poppins);
+            text-transform: capitalize;
+
+         }
+
+         textarea {
+            width: 100% !important;
+            display: block;
+            padding: 10px 3%;
+            border: 0;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            @include fntfml(#666, 13px, 400, $poppins);
+            text-transform: capitalize;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+         }
+         button{
+            background: 0;
+            border:0;
+            @include fntfml(#fff, 16px, 500, $poppins);
+            padding: 12px 25px;
+            background: #222;
+            text-transform: uppercase;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            margin: 10px 0;
+            &:hover{
+               background: #454545;
+            }
+
+         }
+      }
+   }
+   .accordion-content{
+      ul{
+         li{
+            margin-bottom: 15px;
+         }
+      }
+      .best{
+         .seller_text{
+            margin-top: 30px;
+            p{
+               @include fntfml(#333, 14px, 400, $poppins);
+            }
+            a{
+              color:#ff9933;
+              font-size: 14px;
+            }
+            h3{
+               @include fntfml(#333,20px, 600, $poppins);
+            }
+         }
+      }
+   }
+}

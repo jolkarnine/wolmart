@@ -1,0 +1,142 @@
+#month_categories {
+    padding: 60px 0;
+    background: #f5f5f5;
+
+    .categories_head {
+        h4 {
+            @include fntfml(#333, 19px, 700, $poppins);
+            text-transform: capitalize;
+            margin-bottom: 25px;
+        }
+    }
+
+    .categories_img {
+        position: relative;
+        cursor: pointer;
+
+        img {
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            transition: all linear 0.3s;
+            -webkit-transition: all linear 0.3s;
+            -moz-transition: all linear 0.3s;
+            -ms-transition: all linear 0.3s;
+            -o-transition: all linear 0.3s;
+        }
+
+        .overly {
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            width: 100%;
+            height: 35px;
+
+            .over_text {
+                position: absolute;
+                left: 50%;
+                display: block;
+                bottom: 16px;
+                padding-bottom: 5px;
+                transform: translatex(-50%);
+                -webkit-transform: translatex(-50%);
+                -moz-transform: translatex(-50%);
+                -ms-transform: translatex(-50%);
+                -o-transform: translatex(-50%);
+
+                h4 {
+                    @include fntfml(#333, 16px, 500, $poppins);
+                    text-transform: capitalize;
+                    transition: $trans;
+                    -webkit-transition: $trans;
+                    -moz-transition: $trans;
+                    -ms-transition: $trans;
+                    -o-transition: $trans;
+                }
+
+                a {
+                    @include fntfml(#336699, 16px, 500, $poppins);
+                    text-transform: uppercase;
+                    display: none;
+                    transition: $trans;
+                    -webkit-transition: $trans;
+                    -moz-transition: $trans;
+                    -ms-transition: $trans;
+                    -o-transition: $trans;
+                    position: relative;
+
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 3px;
+                        background: #336699;
+                        transform: scale(0);
+                        -webkit-transform: scale(0);
+                        -moz-transform: scale(0);
+                        -ms-transform: scale(0);
+                        -o-transform: scale(0);
+
+                        transition: $trans;
+                        -webkit-transition: $trans;
+                        -moz-transition: $trans;
+                        -ms-transition: $trans;
+                        -o-transition: $trans;
+                    }
+                }
+            }
+
+        }
+
+        &:hover {
+
+            box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+
+            img {
+                transform: scale(1.1);
+                -webkit-transform: scale(1.08);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+
+            }
+
+            .overly {
+                .over_text {
+                    a {
+                        display: block;
+
+                    }
+
+                    h4 {
+                        display: none;
+                    }
+                }
+            }
+
+        }
+
+        .overly {
+            .over_text {
+                a {
+                    padding-bottom: 2px;
+
+                    &:hover::after {
+                        transform: scale(1);
+                        -webkit-transform: scale(1);
+                        -moz-transform: scale(1);
+                        -ms-transform: scale(1);
+                        -o-transform: scale(1);
+
+                    }
+                }
+            }
+        }
+
+    }
+
+}
